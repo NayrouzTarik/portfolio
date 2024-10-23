@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst & AI/ML Enthusiast Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Data Analyst & AI/ML Enthusiast</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#findme">Find Me</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>I’m a Data Analyst with a strong focus on AI development, specializing in data analysis, machine learning, and AI-driven solutions.</p>
+            <a href="../static/images/NayrouzTarik-CV.pdf" class="resume-button" download>Download My Resume</a>
+        </div>
+        <div class="cosmos-logo-container">
+            <img src="{{ url_for('static', filename='images/giff.gif') }}" alt="3D Cosmos Logo">
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <h3>End-to-End Machine Learning Pipeline</h3>
+                <p>Developed a comprehensive machine learning pipeline that seamlessly analyzes and models data from a public dataset, showcasing the full ML lifecycle from collection to deployment.</p>
+                <a href="https://github.com/NayrouzTarik/E2E-ML-pipeline" target="_blank" class="github-link">GitHub Link</a>
+            </div>
+            <div class="project-card">
+                <h3>Sales Data Analysis and Dashboard</h3>
+                <p>Analyzed e-commerce sales data to uncover trends and key metrics, visualizing insights with Power BI for quick decision-making.</p>
+                <a href="https://github.com/NayrouzTarik/Sales-Data-Analysis-and-Dashboard" target="_blank" class="github-link">GitHub Link</a>
+            </div>
+            <div class="project-card">
+                <h3>Regulation Chatbot</h3>
+                <p>A user-friendly chatbot designed to simplify the European Commission's AI regulations, providing instant access to essential information.</p>
+                <a href="https://github.com/NayrouzTarik/Regulation-Chatbot" target="_blank" class="github-link">GitHub Link</a>
+            </div>
+        </div>        
+    </section>    
+
+    <section id="findme" class="section findme">
+        <h2>Find Me</h2>
+        <div class="card-container">
+            <div class="card" onclick="window.location.href='https://www.linkedin.com/in/nayrouztarik/'">
+                <div class="card-front">
+                    <img src="{{ url_for('static', filename='images/black_link.png') }}" >
+                </div>
+                <div class="card-back">
+                    <p>LinkedIn</p>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href='https://github.com/NayrouzTarik'">
+                <div class="card-front">
+                    <img src="{{ url_for('static', filename='images/git_black.png') }}">
+                </div>
+                <div class="card-back">
+                    <p>GitHub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="contact-container">
+            <h2>Contact</h2>
+            <p>If you have any questions or just want to say hi, feel free to reach out!</p>
+            <div class="button-container">
+                <a href="mailto:ntarik.loukili@gmail.com" class="contact-link">Email Me</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nayrouz Tarik. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
